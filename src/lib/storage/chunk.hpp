@@ -8,8 +8,8 @@
 #include <string>
 #include <vector>
 
-#include "all_type_variant.hpp"
-#include "types.hpp"
+#include "../../lib/all_type_variant.hpp"
+#include "../../lib/types.hpp"
 
 namespace opossum {
 
@@ -46,7 +46,10 @@ class Chunk : private Noncopyable {
   std::shared_ptr<BaseSegment> get_segment(ColumnID column_id) const;
 
  protected:
-  // Implementation goes here
+  //std::vector<std::vector<BaseSegment>> chunk;
+  //std::vector<std::vector<AllTypeVariant> > chunk;
+  //std::vector<AllTypeVariant> chunk_row;
+  std::vector<std::shared_ptr<BaseSegment> > chunk_segment;
 };
 
 }  // namespace opossum

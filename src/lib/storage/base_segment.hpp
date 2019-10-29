@@ -3,8 +3,10 @@
 #include <memory>
 #include <string>
 
-#include "all_type_variant.hpp"
-#include "types.hpp"
+//#include "all_type_variant.hpp"
+#include "../../lib/all_type_variant.hpp"
+#include "../../lib/types.hpp"
+//#include "types.hpp"
 
 namespace opossum {
 
